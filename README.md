@@ -28,4 +28,4 @@ If you are interested in contributing to `gd.schema`, make sure to take a look a
 [Code of Conduct]: https://github.com/gd-programming/gd.schema/blob/main/CODE_OF_CONDUCT.md
 [Contributing Guide]: https://github.com/gd-programming/gd.schema/blob/main/CONTRIBUTING.md
 
-[License]: https://github.com/nekitdev/gd.schema/blob/main/LICENSE
+[License]: https://github.com/gd-programming/gd.schema/blob/main/LICENSE
