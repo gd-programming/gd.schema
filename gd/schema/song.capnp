@@ -1,6 +1,6 @@
 @0xaea4dea251a81afc;
 
-using Artist = import "artist.capnp".Artist;
+using import "artist.capnp".Artist;
 
 struct Song {
     id @0 :UInt32;
