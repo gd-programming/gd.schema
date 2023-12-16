@@ -1,11 +1,13 @@
 @0x83252853124c73c2;
 
-using import "generics/option.capnp".Option;
+using import "aliases/enum.capnp".EnumValue;
+using import "aliases/id.capnp".Id;
+using import "option.capnp".Option;
 
 struct UserReference {
-    id @0 :UInt32;
+    id @0 :Id;
     name @1 :Text;
-    accountId @2 :UInt32;
+    accountId @2 :Id;
 }
 
 struct UserStatistics {
@@ -37,10 +39,10 @@ struct UserCosmetics {
 }
 
 struct UserStates {
-    messageState @0 :UInt8;
-    friendRequestState @1 :UInt8;
-    commentState @2 :UInt8;
-    friendStateid @3 :UInt8;
+    messageState @0 :EnumValue;
+    friendRequestState @1 :EnumValue;
+    commentState @2 :EnumValue;
+    friendState @3 :EnumValue;
 }
 
 struct UserSocials {
@@ -50,22 +52,14 @@ struct UserSocials {
     discord @3 :Option(Text);
 }
 
-struct UserLeaderboard {
-    record @0 :UInt8;
-    coins @1 :UInt8;
-    recordedAt @2 :UInt64;
-}
-
 struct User {
-    id @0 :UInt32;
+    id @0 :Id;
     name @1 :Text;
-    accountId @2 :UInt32;
+    accountId @2 :Id;
     roleId @3 :UInt8;
     banned @4 :Bool;
-    place @5 :UInt32;
-    statistics @6 :Option(UserStatistics);
-    cosmetics @7 :Option(UserCosmetics);
-    states @8 :Option(UserStates);
-    socials @9 :Option(UserSocials);
-    leaderboard @10 :Option(UserLeaderboard);
+    statistics @5 :Option(UserStatistics);
+    cosmetics @6 :Option(UserCosmetics);
+    states @7 :Option(UserStates);
+    socials @8 :Option(UserSocials);
 }
