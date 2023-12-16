@@ -1,7 +1,7 @@
 @0xaea4dea251a81afc;
 
 using import "artist.capnp".Artist;
-using import "option.capnp".Option;
+using import "generics/option.capnp".Option;
 
 struct SongReference {
     id @0 :UInt32;

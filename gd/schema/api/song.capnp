@@ -1,7 +1,7 @@
 @0xb01864dba3141a3b;
 
-using import "artist_api.capnp".ArtistAPI;
-using import "option.capnp".Option;
+using import "artist.capnp".ArtistAPI;
+using import "../generics/option.capnp".Option;
 
 struct SongAPI {
     id @0 :UInt32;

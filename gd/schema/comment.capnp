@@ -1,6 +1,6 @@
 @0xa33c26ceeb45eeef;
 
-using import "option.capnp".Option;
+using import "generics/option.capnp".Option;
 using import "user.capnp".User;
 
 struct CommentLevelReference {

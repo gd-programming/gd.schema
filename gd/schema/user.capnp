@@ -1,6 +1,6 @@
 @0x83252853124c73c2;
 
-using import "option.capnp".Option;
+using import "generics/option.capnp".Option;
 
 struct UserReference {
     id @0 :UInt32;

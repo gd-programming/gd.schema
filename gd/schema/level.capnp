@@ -1,6 +1,6 @@
 @0xea1c9d34d3f009fd;
 
-using import "option.capnp".Option;
+using import "generics/option.capnp".Option;
 using import "song.capnp".SongReference;
 using import "user.capnp".UserReference;
 
