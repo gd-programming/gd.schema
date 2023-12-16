@@ -6,4 +6,5 @@ struct Artist {
         none @1 :Void;
     }
     name @2 :Text;
+    verified @3 :Bool;
 }
