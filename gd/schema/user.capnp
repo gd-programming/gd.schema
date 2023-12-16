@@ -2,6 +2,12 @@
 
 using import "option.capnp".Option;
 
+struct UserReference {
+    id @0 :UInt32;
+    name @1 :Text;
+    accountId @2 :UInt32;
+}
+
 struct UserStatistics {
     stars @0 :UInt32;
     demons @1 :UInt16;
@@ -34,7 +40,7 @@ struct UserStates {
     messageState @0 :UInt8;
     friendRequestState @1 :UInt8;
     commentState @2 :UInt8;
-    friendState @3 :UInt8;
+    friendStateid @3 :UInt8;
 }
 
 struct UserSocials {

@@ -1,10 +1,9 @@
-@0xa2a454d3b34ab52c;
+@0xcaf19768729afafd;
 
 struct Artist {
-    name @0 :Text;
-    verified @1 :Bool;
     id :union {
-        some @2 :UInt32;
-        none @3 :Void;
+        some @0 :UInt32;
+        none @1 :Void;
     }
+    name @2 :Text;
 }
