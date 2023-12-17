@@ -8,3 +8,5 @@ using ObjectId = UInt16;
 using LinkId = UInt16;
 
 using VisualId = UInt8;
+
+using CoinId = UInt8;

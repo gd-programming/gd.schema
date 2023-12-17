@@ -7,17 +7,17 @@ using import "aliases/opacity.capnp".Opacity;
 using import "aliases/opacity.capnp".OptionOpacity;
 using import "hsv.capnp".Hsv;
 
-struct PlayerColor {
-    color @0 :EnumValue;
+struct PlayerColorChannelOptions {
+    playerColor @0 :EnumValue;
     opacity @1 :Opacity;
 }
 
-struct NormalColor {
+struct NormalColorChannelOptions {
     color @0 :Color;
     opacity @1 :Opacity;
 }
 
-struct CopiedColor {
+struct CopiedColorChannelOptions {
     id @0 :ColorChannelId;
     hsv @1 :Hsv;
     opacity @2 :OptionOpacity;
@@ -25,10 +25,10 @@ struct CopiedColor {
 
 struct ColorChannel {
     id @0 :ColorChannelId;
+    blending @1 :Bool;
     union {
-        player @1 :PlayerColor;
-        normal @2 :NormalColor;
-        copied @3 :CopiedColor;
+        player @2 :PlayerColorChannelOptions;
+        normal @3 :NormalColorChannelOptions;
+        copied @4 :CopiedColorChannelOptions;
     }
-    blending @4 :Bool;
 }
