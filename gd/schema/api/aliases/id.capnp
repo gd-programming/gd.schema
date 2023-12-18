@@ -12,3 +12,5 @@ using VisualId = UInt8;
 using AnimationId = UInt8;
 
 using CoinId = UInt8;
+
+using FolderId = UInt16;
