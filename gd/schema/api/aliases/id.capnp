@@ -9,4 +9,6 @@ using LinkId = UInt16;
 
 using VisualId = UInt8;
 
+using AnimationId = UInt8;
+
 using CoinId = UInt8;

@@ -2,6 +2,7 @@
 
 using import "aliases/enum.capnp".EnumValue;
 using import "aliases/id.capnp".Id;
+using import "aliases/id.capnp".RoleId;
 using import "option.capnp".Option;
 
 struct UserReference {
@@ -56,7 +57,7 @@ struct User {
     id @0 :Id;
     name @1 :Text;
     accountId @2 :Id;
-    roleId @3 :UInt8;
+    roleId @3 :RoleId;
     banned @4 :Bool;
     statistics @5 :Option(UserStatistics);
     cosmetics @6 :Option(UserCosmetics);

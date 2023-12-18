@@ -2,7 +2,7 @@
 
 using import "../aliases/enum.capnp".EnumValue;
 using import "aliases/id.capnp".VisualId;
-using import "aliases/songOffset.capnp".SongOffset;
+using import "aliases/time.capnp".Timestamp;
 using import "colorChannel.capnp".ColorChannel;
 using import "guidelines.capnp".Guidelines;
 
@@ -15,7 +15,7 @@ struct Header {
     dualMode @5 :Bool;
     twoPlayer @6 :Bool;
     flipGravity @7 :Bool;
-    songOffset @8 :SongOffset;
+    songOffset @8 :Timestamp;
     guidelines @9 :Guidelines;
     songFadeIn @10 :Bool;
     songFadeOut @11 :Bool;

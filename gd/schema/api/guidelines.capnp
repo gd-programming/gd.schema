@@ -1,8 +1,12 @@
 @0x9d8a4802f4a1b9c7;
 
+using import "aliases/time.capnp".Timestamp;
+
+using GuidelineColor = Float32;
+
 struct Guideline {
-    timestamp @0 :Float32;
-    color @1 :Float32;
+    timestamp @0 :Timestamp;
+    color @1 :GuidelineColor;
 }
 
 using Guidelines = List(Guideline);

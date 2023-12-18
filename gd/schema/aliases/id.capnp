@@ -4,3 +4,5 @@ using import "../option.capnp".OptionUInt64;
 
 using Id = UInt64;
 using OptionId = OptionUInt64;
+
+using RoleId = UInt8;
