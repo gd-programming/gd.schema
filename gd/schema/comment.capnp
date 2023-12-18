@@ -3,7 +3,7 @@
 using import "aliases/color.capnp".Color;
 using import "aliases/id.capnp".Id;
 using import "aliases/record.capnp".OptionRecord;
-using import "aliases/rating.capnp".Rating;
+using import "aliases/statistics.capnp".Rating;
 using import "aliases/time.capnp".Timestamp;
 using import "option.capnp".Option;
 using import "user.capnp".UserReference;
