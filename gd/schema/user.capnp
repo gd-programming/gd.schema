@@ -11,7 +11,7 @@ using import "aliases/statistics.capnp".Demons;
 using import "aliases/statistics.capnp".Diamonds;
 using import "aliases/statistics.capnp".Rank;
 using import "aliases/statistics.capnp".SecretCoins;
-using import "aliases/statistics.capnp".TotalStars;
+using import "aliases/statistics.capnp".Stars;
 using import "aliases/statistics.capnp".UserCoins;
 using import "option.capnp".Option;
 
@@ -22,7 +22,7 @@ struct UserReference {
 }
 
 struct UserStatistics {
-    stars @0 :TotalStars;
+    stars @0 :Stars;
     demons @1 :Demons;
     diamonds @2 :Diamonds;
     userCoins @3 :UserCoins;

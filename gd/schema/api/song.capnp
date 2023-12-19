@@ -3,9 +3,8 @@
 using import "../aliases/id.capnp".Id;
 using import "../aliases/size.capnp".Size;
 using import "../option.capnp".Option;
+using import "aliases/priority.capnp".Priority;
 using import "artist.capnp".ArtistAPI;
-
-using SongPriority = UInt32;
 
 struct SongAPI {
     id @0 :Id;
@@ -13,5 +12,5 @@ struct SongAPI {
     artist @2 :ArtistAPI;
     size @3 :Size;
     url @4 :Option(Text);
-    priority @5 :SongPriority;
+    priority @5 :Priority;
 }

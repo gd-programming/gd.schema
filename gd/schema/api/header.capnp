@@ -1,8 +1,8 @@
 @0x94465e9a2de58adc;
 
 using import "../aliases/enum.capnp".EnumValue;
+using import "../aliases/time.capnp".Timestamp;
 using import "aliases/id.capnp".VisualId;
-using import "aliases/time.capnp".Timestamp;
 using import "colorChannel.capnp".ColorChannel;
 using import "guidelines.capnp".Guidelines;
 

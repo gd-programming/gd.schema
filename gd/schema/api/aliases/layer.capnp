@@ -3,4 +3,3 @@
 using EditorLayer = UInt16;
 
 using ZLayer = Int8;
-using ZOrder = Int16;

@@ -3,12 +3,13 @@
 using import "aliases/capacity.capnp".Capacity;
 using import "aliases/enum.capnp".EnumValue;
 using import "aliases/id.capnp".Id;
-using import "aliases/statistics.capnp".Coins;
+using import "aliases/id.capnp".TimelyId;
 using import "aliases/statistics.capnp".Downloads;
 using import "aliases/statistics.capnp".ObjectCount;
 using import "aliases/statistics.capnp".Rating;
+using import "aliases/statistics.capnp".RewardCoins;
+using import "aliases/statistics.capnp".RewardStars;
 using import "aliases/statistics.capnp".Score;
-using import "aliases/statistics.capnp".Stars;
 using import "aliases/time.capnp".Duration;
 using import "aliases/time.capnp".OptionTimestamp;
 using import "aliases/version.capnp".Version;
@@ -30,15 +31,15 @@ struct Level {
     rating @9 :Rating;
     length @10 :EnumValue;
     difficulty @11 :EnumValue;
-    stars @12 :Stars;
-    requestedStars @13 :Stars;
+    stars @12 :RewardStars;
+    requestedStars @13 :RewardStars;
     score @14 :Score;
     rateType @15 :EnumValue;
     password @16 :Option(Password);
     originalId @17 :Id;
     twoPlayer @18 :Bool;
     capacity @19 :Option(Capacity);
-    coins @20 :Coins;
+    coins @20 :RewardCoins;
     verifiedCoins @21 :Bool;
     lowDetail @22 :Bool;
     objectCount @23 :ObjectCount;
@@ -47,5 +48,5 @@ struct Level {
     editorTime @26 :Duration;
     copiesTime @27 :Duration;
     timelyType @28 :EnumValue;
-    timelyId @29 :Id;
+    timelyId @29 :TimelyId;
 }

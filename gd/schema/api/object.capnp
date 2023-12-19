@@ -3,6 +3,7 @@
 using import "../aliases/color.capnp".Color;
 using import "../aliases/enum.capnp".EnumValue;
 using import "../aliases/flag.capnp".FlagValue;
+using import "../aliases/time.capnp".Duration;
 using import "../option.capnp".Option;
 using import "aliases/count.capnp".Count;
 using import "aliases/geometry.capnp".Modifier;
@@ -20,12 +21,11 @@ using import "aliases/id.capnp".ObjectId;
 using import "aliases/id.capnp".LinkId;
 using import "aliases/layer.capnp".EditorLayer;
 using import "aliases/layer.capnp".ZLayer;
-using import "aliases/layer.capnp".ZOrder;
 using import "aliases/opacity.capnp".Opacity;
 using import "aliases/opacity.capnp".OptionOpacity;
+using import "aliases/order.capnp".ZOrder;
 using import "aliases/physics.capnp".Speed;
 using import "aliases/physics.capnp".Strength;
-using import "aliases/time.capnp".Duration;
 using import "hsv.capnp".Hsv;
 
 struct ObjectTransform {
