@@ -12,6 +12,7 @@ using RewardCoins = UInt8;
 using ObjectCount = UInt32;
 
 using Stars = UInt32;
+using Moons = UInt32;
 using Demons = UInt16;
 using Diamonds = UInt32;
 using UserCoins = UInt32;

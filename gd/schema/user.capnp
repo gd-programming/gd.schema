@@ -9,6 +9,7 @@ using import "aliases/id.capnp".RoleId;
 using import "aliases/statistics.capnp".CreatorPoints;
 using import "aliases/statistics.capnp".Demons;
 using import "aliases/statistics.capnp".Diamonds;
+using import "aliases/statistics.capnp".Moons;
 using import "aliases/statistics.capnp".Rank;
 using import "aliases/statistics.capnp".SecretCoins;
 using import "aliases/statistics.capnp".Stars;
@@ -23,30 +24,33 @@ struct UserReference {
 
 struct UserStatistics {
     stars @0 :Stars;
-    demons @1 :Demons;
-    diamonds @2 :Diamonds;
-    userCoins @3 :UserCoins;
-    secretCoins @4 :SecretCoins;
-    creatorPoints @5 :CreatorPoints;
-    rank @6 :Rank;
+    moons @1 :Moons;
+    demons @2 :Demons;
+    diamonds @3 :Diamonds;
+    userCoins @4 :UserCoins;
+    secretCoins @5 :SecretCoins;
+    creatorPoints @6 :CreatorPoints;
+    rank @7 :Rank;
 }
 
 struct UserCosmetics {
     color1Id @0 :ColorId;
     color2Id @1 :ColorId;
-    glow @2 :Bool;
-    iconType @3 :EnumValue;
-    iconId @4 :LongIconId;
-    cubeId @5 :LongIconId;
-    shipId @6 :IconId;
-    ballId @7 :IconId;
-    ufoId @8 :IconId;
-    waveId @9 :IconId;
-    robotId @10 :IconId;
-    spiderId @11 :IconId;
-    explosionId @12 :IconId;
-    streakId @13 :IconId;
-    swingId @14 :IconId;
+    color3Id @2 :ColorId;
+    glow @3 :Bool;
+    iconType @4 :EnumValue;
+    iconId @5 :LongIconId;
+    cubeId @6 :LongIconId;
+    shipId @7 :IconId;
+    ballId @8 :IconId;
+    ufoId @9 :IconId;
+    waveId @10 :IconId;
+    robotId @11 :IconId;
+    spiderId @12 :IconId;
+    explosionId @13 :IconId;
+    streakId @14 :IconId;
+    swingId @15 :IconId;
+    jetpackId @16 :IconId;
 }
 
 struct UserStates {
