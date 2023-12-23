@@ -47,10 +47,10 @@ struct UserCosmetics {
     waveId @10 :IconId;
     robotId @11 :IconId;
     spiderId @12 :IconId;
-    explosionId @13 :IconId;
-    streakId @14 :IconId;
-    swingId @15 :IconId;
-    jetpackId @16 :IconId;
+    swingId @13 :IconId;
+    jetpackId @14 :IconId;
+    explosionId @15 :IconId;
+    streakId @16 :IconId;
 }
 
 struct UserStates {
