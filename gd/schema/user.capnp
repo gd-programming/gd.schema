@@ -10,10 +10,14 @@ using import "aliases/statistics.capnp".CreatorPoints;
 using import "aliases/statistics.capnp".Demons;
 using import "aliases/statistics.capnp".Diamonds;
 using import "aliases/statistics.capnp".Moons;
+using import "aliases/statistics.capnp".OptionPlace;
 using import "aliases/statistics.capnp".Rank;
+using import "aliases/statistics.capnp".RewardCoins;
 using import "aliases/statistics.capnp".SecretCoins;
 using import "aliases/statistics.capnp".Stars;
 using import "aliases/statistics.capnp".UserCoins;
+using import "aliases/time.capnp".Timestamp;
+using import "eitherRecord.capnp".EitherRecord;
 using import "option.capnp".Option;
 
 struct UserReference {
@@ -67,6 +71,12 @@ struct UserSocials {
     discord @3 :Option(Text);
 }
 
+struct UserLeaderboard {
+    record @0 :EitherRecord;
+    coins @1 :RewardCoins;
+    recordedAt @2 :Timestamp;
+}
+
 struct User {
     id @0 :Id;
     name @1 :Text;
@@ -77,4 +87,6 @@ struct User {
     cosmetics @6 :Option(UserCosmetics);
     states @7 :Option(UserStates);
     socials @8 :Option(UserSocials);
+    place @9 :OptionPlace;
+    leaderboard @10 :Option(UserLeaderboard);
 }
