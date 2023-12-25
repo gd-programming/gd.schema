@@ -1,7 +1,7 @@
 @0xc7c81742162b8987;
 
-using import "aliases/duration.capnp".Duration;
 using import "aliases/record.capnp".Record;
+using import "aliases/time.capnp".Duration;
 
 struct EitherRecord {
     union {
