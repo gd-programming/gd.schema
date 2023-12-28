@@ -5,11 +5,12 @@ using import "aliases/id.capnp".Id;
 using import "aliases/record.capnp".OptionRecord;
 using import "aliases/statistics.capnp".Rating;
 using import "aliases/time.capnp".Timestamp;
+using import "level.capnp".LevelReference;
 using import "option.capnp".Option;
 using import "user.capnp".UserReference;
 
 struct CommentLevelReference {
-    id @0 :Id;
+    level @0 :LevelReference;
     record @1 :OptionRecord;
 }
 
@@ -20,5 +21,5 @@ struct Comment {
     color @3 :Color;
     rating @4 :Rating;
     createdAt @5 :Timestamp;
-    level @6 :Option(CommentLevelReference);
+    reference @6 :Option(CommentLevelReference);
 }
