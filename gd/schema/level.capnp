@@ -18,6 +18,11 @@ using import "password.capnp".Password;
 using import "song.capnp".SongReference;
 using import "user.capnp".UserReference;
 
+struct LevelReference {
+    id @0 :Id;
+    name @1 :Text;
+}
+
 struct Level {
     id @0 :Id;
     name @1 :Text;
