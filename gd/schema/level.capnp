@@ -56,5 +56,5 @@ struct Level {
     copiesTime @27 :Duration;
     timelyType @28 :EnumValue;
     timelyId @29 :TimelyId;
-    timeSteps @30: TimeSteps;
+    timeSteps @30 :TimeSteps;
 }
