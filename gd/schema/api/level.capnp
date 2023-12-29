@@ -28,12 +28,12 @@ using import "aliases/id.capnp".FolderId;
 using import "aliases/order.capnp".Order;
 using import "recording.capnp".Recording;
 
-struct OfficialLevelAPIOptions {
+struct OfficialLevelApiOptions {
     difficulty @0 :EnumValue;
     requiredCoins @1 :SecretCoins;
 }
 
-struct CreatedLevelAPIOptions {
+struct CreatedLevelApiOptions {
     revision @0 :Revision;
     verified @1 :Bool;
     uploaded @2 :Bool;
@@ -42,12 +42,12 @@ struct CreatedLevelAPIOptions {
     unlisted @5 :Bool;
 }
 
-struct TimelyLevelAPIOptions {
+struct TimelyLevelApiOptions {
     timelyType @0 :EnumValue;
     timelyId @1 :TimelyId;
 }
 
-struct SavedLevelAPIOptions {
+struct SavedLevelApiOptions {
     difficulty @0 :EnumValue;
     downloads @1 :Downloads;
     gameVersion @2 :Version;
@@ -57,10 +57,10 @@ struct SavedLevelAPIOptions {
     hidden @6 :Bool;
     verifiedCoins @7 :Bool;
     favorite @8 :Bool;
-    timely @9 :Option(TimelyLevelAPIOptions);
+    timely @9 :Option(TimelyLevelApiOptions);
 }
 
-struct CustomLevelAPIOptions {
+struct CustomLevelApiOptions {
     song @0 :SongReference;
     creator @1 :UserReference;
     description @2 :Option(Text);
@@ -79,12 +79,12 @@ struct CustomLevelAPIOptions {
     order @15 :Order;
     folderId @16 :FolderId;
     union {
-        created @17 :CreatedLevelAPIOptions;
-        saved @18 :SavedLevelAPIOptions;
+        created @17 :CreatedLevelApiOptions;
+        saved @18 :SavedLevelApiOptions;
     }
 }
 
-struct LevelAPI {
+struct LevelApi {
     id @0 :Id;
     name @1 :Text;
     version @2 :Version;
@@ -103,7 +103,7 @@ struct LevelAPI {
     check @15 :Bool;
     leaderboardRecord @16 :OptionRecord;
     union {
-        official @17 :OfficialLevelAPIOptions;
-        custom @18 :CustomLevelAPIOptions;
+        official @17 :OfficialLevelApiOptions;
+        custom @18 :CustomLevelApiOptions;
     }
 }

@@ -2,7 +2,7 @@
 
 using import "../aliases/id.capnp".Id;
 
-struct ArtistAPI {
+struct ArtistApi {
     id @0 :Id;
     name @1 :Text;
 }
