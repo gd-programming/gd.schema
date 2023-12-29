@@ -3,7 +3,6 @@
 using import "aliases/id.capnp".Id;
 using import "aliases/enum.capnp".EnumValue;
 using import "aliases/time.capnp".Timestamp;
-using import "option.capnp".Option;
 using import "user.capnp".UserReference;
 
 struct FriendRequest {

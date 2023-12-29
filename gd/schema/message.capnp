@@ -11,7 +11,7 @@ struct Message {
     user @1 :UserReference;
     type @2 :EnumValue;
     subject @3 :Text;
-    content @4 :Text;
+    content @4 :Option(Text);
     createdAt @5 :Timestamp;
     read @6 :Bool;
 }
