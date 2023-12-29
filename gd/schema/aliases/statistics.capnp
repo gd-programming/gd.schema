@@ -11,6 +11,8 @@ using Score = UInt32;
 using RewardStars = UInt8;
 using RewardCoins = UInt8;
 
+using RewardMoons = UInt8;
+
 using ObjectCount = UInt32;
 
 using Stars = UInt32;

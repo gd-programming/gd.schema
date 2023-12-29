@@ -13,6 +13,7 @@ using import "aliases/statistics.capnp".Score;
 using import "aliases/time.capnp".Duration;
 using import "aliases/time.capnp".OptionTimestamp;
 using import "aliases/version.capnp".Version;
+using import "eitherReward.capnp".EitherReward;
 using import "option.capnp".Option;
 using import "password.capnp".Password;
 using import "song.capnp".SongReference;
@@ -36,8 +37,8 @@ struct Level {
     rating @9 :Rating;
     length @10 :EnumValue;
     difficulty @11 :EnumValue;
-    stars @12 :RewardStars;
-    requestedStars @13 :RewardStars;
+    reward @12 :EitherReward;
+    requestedReward @13 :EitherReward;
     score @14 :Score;
     rateType @15 :EnumValue;
     password @16 :Option(Password);
