@@ -17,7 +17,7 @@ struct CommentLevelReference {
 struct Comment {
     id @0 :Id;
     author @1 :UserReference;
-    content @2 :Option(Text);
+    content @2 :Text;
     color @3 :Color;
     rating @4 :Rating;
     createdAt @5 :Timestamp;

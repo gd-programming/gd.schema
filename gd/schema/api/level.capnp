@@ -63,7 +63,7 @@ struct SavedLevelApiOptions {
 struct CustomLevelApiOptions {
     song @0 :SongReference;
     creator @1 :UserReference;
-    description @2 :Option(Text);
+    description @2 :Text;
     data @3 :Data;
     length @4 :EnumValue;
     password @5 :Password;

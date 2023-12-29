@@ -10,7 +10,7 @@ struct FriendRequest {
     id @0 :Id;
     user @1 :UserReference;
     type @2 :EnumValue;
-    content @3 :Option(Text);
+    content @3 :Text;
     createdAt @4 :Timestamp;
     read @5 :Bool;
 }

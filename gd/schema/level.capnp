@@ -27,7 +27,7 @@ struct LevelReference {
 struct Level {
     id @0 :Id;
     name @1 :Text;
-    description @2 :Option(Text);
+    description @2 :Text;
     creator @3 :UserReference;
     song @4 :SongReference;
     data @5 :Option(Data);

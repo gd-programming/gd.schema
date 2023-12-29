@@ -10,8 +10,8 @@ struct Message {
     id @0 :Id;
     user @1 :UserReference;
     type @2 :EnumValue;
-    subject @3 :Option(Text);
-    content @4 :Option(Text);
+    subject @3 :Text;
+    content @4 :Text;
     createdAt @5 :Timestamp;
     read @6 :Bool;
 }
