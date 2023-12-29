@@ -6,4 +6,5 @@ using Timestamp = UInt64;  # ms
 using OptionTimestamp = OptionUInt64;  # ms
 
 using Duration = UInt64;  # ms
-using OptionDuration = OptionUInt64;  # ms
+
+using TimeSteps = UInt64;

@@ -12,6 +12,7 @@ using import "aliases/statistics.capnp".RewardStars;
 using import "aliases/statistics.capnp".Score;
 using import "aliases/time.capnp".Duration;
 using import "aliases/time.capnp".OptionTimestamp;
+using import "aliases/time.capnp".TimeSteps;
 using import "aliases/version.capnp".Version;
 using import "eitherReward.capnp".EitherReward;
 using import "option.capnp".Option;
@@ -55,4 +56,5 @@ struct Level {
     copiesTime @27 :Duration;
     timelyType @28 :EnumValue;
     timelyId @29 :TimelyId;
+    timeSteps @30: TimeSteps;
 }
