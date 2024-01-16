@@ -17,6 +17,7 @@ using import "aliases/statistics.capnp".SecretCoins;
 using import "aliases/statistics.capnp".Stars;
 using import "aliases/statistics.capnp".UserCoins;
 using import "aliases/time.capnp".Timestamp;
+using import "demonInfo.capnp".DemonInfo;
 using import "eitherRecord.capnp".EitherRecord;
 using import "option.capnp".Option;
 
@@ -35,6 +36,7 @@ struct UserStatistics {
     secretCoins @5 :SecretCoins;
     creatorPoints @6 :CreatorPoints;
     rank @7 :Rank;
+    demonInfo @8 :DemonInfo;
 }
 
 struct UserCosmetics {
