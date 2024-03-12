@@ -17,7 +17,9 @@ using import "aliases/statistics.capnp".SecretCoins;
 using import "aliases/statistics.capnp".Stars;
 using import "aliases/statistics.capnp".UserCoins;
 using import "aliases/time.capnp".Timestamp;
-using import "demonInfo.capnp".DemonInfo;
+using import "info.capnp".DemonInfo;
+using import "info.capnp".LevelInfo;
+using import "info.capnp".PlatformerInfo;
 using import "eitherRecord.capnp".EitherRecord;
 using import "option.capnp".Option;
 
