@@ -4,6 +4,7 @@ using import "aliases/capacity.capnp".Capacity;
 using import "aliases/enum.capnp".EnumValue;
 using import "aliases/id.capnp".Id;
 using import "aliases/id.capnp".TimelyId;
+using import "aliases/password.capnp".Password;
 using import "aliases/statistics.capnp".Downloads;
 using import "aliases/statistics.capnp".ObjectCount;
 using import "aliases/statistics.capnp".Rating;
@@ -16,7 +17,6 @@ using import "aliases/time.capnp".TimeSteps;
 using import "aliases/version.capnp".Version;
 using import "eitherReward.capnp".EitherReward;
 using import "option.capnp".Option;
-using import "password.capnp".Password;
 using import "song.capnp".SongReference;
 using import "user.capnp".UserReference;
 
@@ -42,7 +42,7 @@ struct Level {
     requestedReward @13 :EitherReward;
     score @14 :Score;
     rateType @15 :EnumValue;
-    password @16 :Option(Password);
+    password @16 :Password;
     originalId @17 :Id;
     twoPlayer @18 :Bool;
     capacity @19 :Option(Capacity);
